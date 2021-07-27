@@ -90,7 +90,10 @@ select {
   height: 220px;
 }
 
-#today img {
+#today img,
+#tommorrow img,
+#friday img,
+#saturday img {
   border-radius: 50%;
 }
 

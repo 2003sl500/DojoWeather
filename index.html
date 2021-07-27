@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- This is the header section -->
+      <header>
+        <h1>DojoWeather</h1>
+        <div id="cities">
+          <ul>
+            <li id="headerP1" onclick="alert('You clicked on Burbank')">
+              Burbank
+            </li>
+            <li id="headerP2" onclick="alert('You clicked on Chicago')">
+              Chicago
+            </li>
+            <li id="headerP3" onclick="alert('You clicked on Dallas')">
+              Dallas
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- This is the section directy below the header -->
+      <div id="aboveDays">
+        <h2>San Jose</h2>
+        <div class="temperature">
+          <p>show temperature in</p>
+          <select
+            name="temperature"
+            id="temperatureConv"
+            onchange="convertCelToFeh()"
+          >
+            <option value="0">C</option>
+            <option value="1">F</option>
+          </select>
+        </div>
+      </div>
+      <!-- This is the section with the weather data for the days -->
+      <div id="days">
+        <div id="today">
+          <h3>Today</h3>
+          <img
+            class="weatherImg"
+            id="todayImg"
+            src="assets/some_rain.png"
+            alt="some rain"
+          />
+          <p id="todayP1">some rain</p>
+          <div class="tempCel">
+            <p id="hi1"><span>24</span>&#176</p>
+            <p id="lo1"><span>18</span>&#176</p>
+          </div>
+        </div>
+        <div id="tommorrow">
+          <h3 class="tommorrow" id="tommorrowH3">Tomorrow</h3>
+          <img
+            class="weatherImg"
+            id="tommorrowImg"
+            src="assets/some_sun.png"
+            alt=""
+          />
+          <p class="tommorrow" id="tommorrowP1">some sun</p>
+          <div class="tempCel">
+            <p id="hi2"><span>27</span>&#176</p>
+            <p id="lo2"><span>19</span>&#176</p>
+          </div>
+        </div>
+        <div id="friday">
+          <h3 class="friday" id="fridayH3">Friday</h3>
+          <img
+            class="weatherImg"
+            id="fridayImg"
+            src="assets/some_clouds.png"
+            alt=""
+          />
+          <p class="friday" id="fridayP1">some clouds</p>
+          <div class="tempCel">
+            <p id="hi3"><span>21</span>&#176</p>
+            <p id="lo3"><span>16</span>&#176</p>
+          </div>
+        </div>
+        <div id="saturday">
+          <h3 class="saturday" id="saturdayH3">Saturday</h3>
+          <img
+            class="weatherImg"
+            id="saturdayImg"
+            src="assets/some_sun.png"
+            alt=""
+          />
+          <p class="saturday" id="saturdayP1">some sun</p>
+          <div class="tempCel">
+            <p id="hi4"><span>26</span>&#176</p>
+            <p id="lo4"><span>21</span>&#176</p>
+          </div>
+        </div>
+      </div>
+      <!-- This is the footer section -->
+      <footer id="footer">
+      <div id="gridLayout">
+        <img src="assets/cookie.png" alt="cookie icon" />
+        <div id="h3P">
+          <h3>Stop! Cookie time</h3>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize
+            <br />content and ads, to provide social media features and to
+            <br />
+            analyze our traffic.
+            <a href=""> Read more...</a>
+          </p>
+        </div>
+        <button id="footerBtn" onclick="dismiss()">I Accept</button>
+      </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

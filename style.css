@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Header section */
+header,
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  height: 50px;
+  width: 95%;
+  margin: 0px auto;
+  background-color: rgb(145, 193, 255);
+  color: whitesmoke;
+}
+
+header ul {
+  padding-right: 80px;
+}
+
+header ul li {
+  padding: 0px 16px;
+  list-style-type: none;
+  font-size: 1.15rem;
+}
+
+header h1 {
+  padding-left: 88px;
+  font-size: 1.95rem;
+}
+
+/* Section right below header */
+
+#aboveDays {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72%;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-bottom: 4px solid black;
+  padding-bottom: 15px;
+}
+
+.temperature {
+  display: flex;
+}
+
+.temperature p {
+  padding: 10px 10px 0px 0px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+select {
+  height: 30px;
+  width: 35px;
+}
+
+/* Days with weather section */
+#days {
+  display: flex;
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+.weatherImg {
+  height: 90px;
+}
+
+#today,
+#tommorrow,
+#friday,
+#saturday {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(219, 213, 213);
+  width: 120px;
+  height: 220px;
+}
+
+#today img {
+  border-radius: 50%;
+}
+
+.tempCel {
+  display: flex;
+}
+
+#hi1,
+#hi2,
+#hi3,
+#hi4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding-right: 25px;
+  color: red;
+}
+
+#lo1,
+#lo2,
+#lo3,
+#lo4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: rgb(15, 56, 236);
+}
+
+/* this is the footer section */
+footer {
+  padding-top: 20px;
+  position: sticky;
+  bottom: 0;
+}
+
+#gridLayout {
+  width: 550px;
+  margin: 0px auto;
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0px;
+}
+
+#footerBtn {
+  height: 25px;
+  width: 70px;
+  margin: auto 0px;
+  background-color: rgb(101, 168, 255);
+  box-shadow: 3px 3px black;
+}
+
+#h3P a {
+  color: blue;
+}
+
+footer img {
+  height: 50px;
+  margin-top: 10px;
+}
+
+footer h3 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+footer p {
+  font-size: 0.85rem;
+  font-weight: 550;
+}

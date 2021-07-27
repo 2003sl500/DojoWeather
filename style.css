@@ -120,13 +120,14 @@ select {
 /* this is the footer section */
 footer {
   padding-top: 20px;
-  position: sticky;
+  position: fixed;
+  left: 50%;
+  margin-left: -280px;
   bottom: 0;
 }
 
 #gridLayout {
   width: 550px;
-  margin: 0px auto;
   border: 3px solid black;
   display: flex;
   justify-content: space-around;

@@ -12,6 +12,8 @@ function convertCelToFeh() {
     "#lo4 span",
   ];
 
+  alert("Loading weather report");
+
   var x = document.getElementById("temperatureConv").selectedIndex;
   console.log(x);
 

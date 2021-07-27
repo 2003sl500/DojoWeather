@@ -12,10 +12,21 @@ function convertCelToFeh() {
     "#lo4 span",
   ];
 
-  for (let i = 0; i < hiLoSelector.length; i++) {
-    var hi = document.querySelector(hiLoSelector[i]);
-    var tempConv = Math.round(hi.innerText * (9 / 5) + 32);
-    hi.innerText = tempConv;
+  var x = document.getElementById("temperatureConv").selectedIndex;
+  console.log(x);
+
+  if (x == 1) {
+    for (let i = 0; i < hiLoSelector.length; i++) {
+      var hi = document.querySelector(hiLoSelector[i]);
+      var tempConv = Math.round(hi.innerText * (9 / 5) + 32);
+      hi.innerText = tempConv;
+    }
+  } else {
+    for (let i = 0; i < hiLoSelector.length; i++) {
+      var hi = document.querySelector(hiLoSelector[i]);
+      var tempConv = Math.round((hi.innerText - 32) * (5 / 9));
+      hi.innerText = tempConv;
+    }
   }
 }
 
